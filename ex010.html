@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>sistema de multas</h1> <br>
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel">KM/h 
+    <input type="button" value="verificar" onclick="caucular()">
+    <div id="res">
+        resposta
+    </div>
+
+    <script>
+
+        function caucular(){
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtvel.value)
+            res.innerHTML = `sua velocidade é de ${vel} km/h`
+            if (vel>60) {
+                res.innerHTML+= '<strong><p>vc foi multado!</p></strong>'
+            }
+            res.innerHTML += `<p>dirija com segurança</p>`
+        }
+        
+    </script>
+</body>
+</html>

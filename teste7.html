@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>aula teste botaõ</title>
+    <style>
+        body{
+            background-size: auto;
+            background-image: url(./dg.png);
+            text-align: center;
+        }
+        div#area{
+            font: normal 20pt arial;
+            background-color: violet;
+            color: white;
+            width: 400pt;
+            height: 40pt;
+            line-height: 40pt;
+            text-align: center;
+            margin-top: 20pt;
+        }
+        div#titulo{
+            font: normal 30pt arial ;
+            text-decoration: none;
+            background-color: #ffffff;
+            height: 70pt;
+            text-align:center;
+        }
+        img{
+            width: 400pt;
+            margin-top: 20pt;
+            color: white;
+        }
+        div#text{
+            color:white;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="titulo">
+        <a href="" style="color: #082836;">sabuguim</a>
+        <a href="" style="color: #082836;">inicio</a>
+        <a href="" style="color: #082836;">sobre</a>
+    </div>
+
+    <div id="img">
+     <img src="er.jpg" alt="height"><br>
+     <br>
+     </div>
+     <div id="text">
+     What is Lorem Ipsum?
+    Lorem Ipsum is simply dummy text of the printing <br>
+    and typesetting industry. Lorem Ipsum has been the industry's standard dummy <br>
+    text ever since the 1500s, when an unknown printer took a galley of type and <br>
+    scrambled it to make a type specimen book. It has survived not only five centuries, <br>
+    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised <br>
+    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more <br>
+    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+
+    <div id="area">
+        oiaa
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click',clicar)
+        a.addEventListener('mousenter',entrar)
+        a.addEventListener('mouseout',saiu)
+        a.addEventListener('mousedown',segurou)
+        a.addEventListener('mouseup',pozinho)
+        a.addEventListener('mousemove',moveu)
+        a.addEventListener('dbclick',clik)
+
+        function clicar() {
+            a.innerText= 'apooo'
+            a.style.background = 'black'
+        }
+        function entrar(){
+            a.innerText = 'entroo'
+            a.style.background = 'blue'
+        }
+        function saiu(){
+            a.innerText= 'saiu'
+            a.style.background = 'red'
+        }
+        function segurou(){
+            a.innerText = 'segurou'
+            a.style.background = 'grey'
+        }
+        function pozinho(){
+            a.innerText = 'pozinho'
+            a.style.background = 'green'
+        }
+        function moveu(){
+            a.innerText = 'moveu'
+            a.style.color = 'pink'
+        }
+        function clik(){
+            a.innerText = 'dois cliks'
+        }
+    </script>
+</body>
+</html>

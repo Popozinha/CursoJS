@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+mostra("<big>" + 'Vamos brincar de tabuada com While e For'+ "</big>")
+pulaLinha();
+
+var multiplicador = 1;
+var nro = parseInt(prompt('Digite um número: '));
+mostra('Ok! Vamos fazer a tabuada de ' + nro )
+pulaLinha()
+
+while(multiplicador <= 10) {
+
+    mostra('Multiplicando com While >> '+ nro + ' vezes ' +multiplicador +' = ' + nro * multiplicador);
+    multiplicador = multiplicador + 1
+}
+
+pulaLinha();
+mostra('Fim da tabuada de ' + nro + ' com o While')
+pulaLinha();
+
+for (var mult=1; mult <=10; mult++) {
+    mostra('Multimplicando com For >> ' + nro +' vezes ' +mult +' = ' + nro * mult)
+}
+pulaLinha();
+mostra('Fim da tabuada de ' + nro + ' com o For')
+
+</script>
