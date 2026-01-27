@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualizar Objeto JSON</title>
+    </head>
+    <body>
+        // Exibir um objeto JSON formatado na página HTML
+        <h1>Visualizar Objeto JSON</h1>
+
+        // Criando o objeto JSON
+        <script>
+            let pessoa = {
+            "nome": "João",
+            "idade": 30,
+            "cidade": "São Paulo",
+            "email": "joao@email.com",
+            "interesses": ["futebol", "música", "viagens"],
+            "telefone": ["(11) 00000-0000", "(11) 12345-6789"],
+            "casado": false
+            };
+            // Exibindo o objeto JSON formatado na página
+             document.write(JSON.stringify(pessoa, null, 2));
+        </script>
+
+     </body>
+</html>
+--- a/file:///c%3A/Users/Aline%20Xavier/Documents/FAULDADE%20GERAL/CODIGOS%20GERAIS/TESTE%20EM%20JS/faculdade.js/json.html
++++ b/file:///c%3A/Users/Aline%20Xavier/Documents/FA
